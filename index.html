@@ -256,7 +256,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
 <i>$</i> cat keypairMESSI.pem</div>
 
         <figure>
-          <img class="shot" src="assets/p1-keypair.png" alt="Two Kali terminals generating RSA key pairs for two parties">
+          <img class="shot" src="p1-keypair.png" alt="Two Kali terminals generating RSA key pairs for two parties">
           <figcaption>Side by side key generation for both parties, exponent 65537 confirmed.</figcaption>
         </figure>
 
@@ -288,7 +288,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
 <i>$</i> cat site.pem</div>
 
         <figure>
-          <img class="shot" src="assets/p2-certchain.png" alt="Terminal output showing certificate chain depths and verify return codes">
+          <img class="shot" src="p2-certchain.png" alt="Terminal output showing certificate chain depths and verify return codes">
           <figcaption>Chain verified at depth 2, 1 and 0, then the saved certificate read back.</figcaption>
         </figure>
 
@@ -322,8 +322,8 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
     -base64 -iter 10000 -pbkdf2</div>
 
         <figure class="two">
-          <span><img class="shot" src="assets/p3-encrypt.png" alt="Encrypting a file with AES-256-CBC in a Kali terminal"><figcaption>Encryption, including the two rejected flag attempts.</figcaption></span>
-          <span><img class="shot" src="assets/p4-decrypt.png" alt="Decrypting the file and recovering the original plaintext"><figcaption>Ciphertext shown, then a clean recovery of the original line.</figcaption></span>
+          <span><img class="shot" src="p3-encrypt.png" alt="Encrypting a file with AES-256-CBC in a Kali terminal"><figcaption>Encryption, including the two rejected flag attempts.</figcaption></span>
+          <span><img class="shot" src="p4-decrypt.png" alt="Decrypting the file and recovering the original plaintext"><figcaption>Ciphertext shown, then a clean recovery of the original line.</figcaption></span>
         </figure>
 
         <div class="proof"><b>Why it matters:</b> encryption at rest is only reversible if the cipher, the derivation function and the iteration count are recorded. Lose any of those and the data is gone, which is a real recovery risk, not a theory.</div>
@@ -355,7 +355,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
 <i>$</i> sha256sum someData.txt    # production equivalent</div>
 
         <figure>
-          <img class="shot" src="assets/p5-hashing.png" alt="Hashing a file with md5sum and generating a signing key pair">
+          <img class="shot" src="p5-hashing.png" alt="Hashing a file with md5sum and generating a signing key pair">
           <figcaption>Digest produced, signer key pair generated in the signing directory.</figcaption>
         </figure>
 
@@ -386,7 +386,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
 <i>$</i> arp -a</div>
 
         <figure>
-          <img class="shot" src="assets/p6-recon.png" alt="Ping sweep with unreachable results and an ARP cache listing">
+          <img class="shot" src="p6-recon.png" alt="Ping sweep with unreachable results and an ARP cache listing">
           <figcaption>Unreachable host at layer 3, then the ARP table showing which addresses actually resolved.</figcaption>
         </figure>
 
@@ -416,7 +416,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
         <div class="cmd"><i>$</i> fcrackzip -v -u -l 1-4 file-2.zip</div>
 
         <figure>
-          <img class="shot" src="assets/p7-zipcrack.png" alt="fcrackzip recovering a short archive password in a lab workstation">
+          <img class="shot" src="p7-zipcrack.png" alt="fcrackzip recovering a short archive password in a lab workstation">
           <figcaption>Recovery completed against lab supplied sample data.</figcaption>
         </figure>
 
@@ -448,7 +448,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
 <i>$</i> file cat.jpeg</div>
 
         <figure>
-          <img class="shot" src="assets/p8-filesig.png" alt="Hex dump showing RIFF WEBP magic bytes on a file named .jpeg">
+          <img class="shot" src="p8-filesig.png" alt="Hex dump showing RIFF WEBP magic bytes on a file named .jpeg">
           <figcaption>Header bytes read RIFF and WEBP while the file name claims JPEG.</figcaption>
         </figure>
 
@@ -522,7 +522,7 @@ footer{padding:26px 0;font-size:13px;color:var(--muted);font-family:"IBM Plex Mo
         <tr><td class="name">Sound the Alarm: Detection and Response</td><td>Google</td><td>2024</td><td class="id">on request</td></tr>
       </tbody>
     </table>
-    <img class="certshot" src="assets/cert-cisco.png" alt="Cisco Networking Academy badges for CyberOps Associate and Cybersecurity Essentials">
+    <img class="certshot" src="cert-cisco.png" alt="Cisco Networking Academy badges for CyberOps Associate and Cybersecurity Essentials">
   </div>
 </section>
 
